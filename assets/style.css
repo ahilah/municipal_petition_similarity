@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Загальні шрифти та фон */
+.stApp {
+  font-family: var(--font-family, sans-serif) !important;
+}
+
+p,
+span,
+div,
+label,
+.stMarkdown {
+  font-family: var(--font-family, sans-serif) !important;
+}
+
+/* Сайдбар */
+section[data-testid="stSidebar"] {
+  border-right: 1px solid #cbd5e1;
+}
+
+/* Поля введення */
+.stTextInput > div > div > input,
+.stTextArea > div > div > textarea {
+  border-radius: 8px !important;
+}
+
+/* Картки результатів */
+.petition-card {
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.badge-duplicate {
+  background-color: #fee2e2;
+  color: #991b1b;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+.badge-review {
+  background-color: #fef3c7;
+  color: #92400e;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+.badge-unique {
+  background-color: #dcfce7;
+  color: #166534;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}

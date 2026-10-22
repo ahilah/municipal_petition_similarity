@@ -1,0 +1,12 @@
+{
+  "font_family": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+  "bg_main": "#F8FAFC",
+  "bg_sidebar": "#FFFFFF",
+  "bg_card": "#FFFFFF",
+  "text_primary": "#0F172A",
+  "text_secondary": "#475569",
+  "text_sidebar": "#1E293B",
+  "accent_color": "#7C3AED",
+  "accent_hover": "#6D28D9",
+  "border_color": "#CBD5E1"
+}

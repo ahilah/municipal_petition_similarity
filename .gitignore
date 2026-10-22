@@ -1,0 +1,22 @@
+# Python bytecode та кеш
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Віртуальні середовища
+venv/
+env/
+ENV/
+
+# Налаштування редакторів
+.vscode/
+.idea/
+
+# Streamlit локальні налаштування
+.streamlit/
+
+data/downloaded_petitions/
+TODO.txt
+notebooks/
+v1/
+data/embeddings_v1.pt
