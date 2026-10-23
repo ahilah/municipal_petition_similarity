@@ -40,6 +40,7 @@ section[data-testid="stSidebar"] {
   border-radius: 6px;
   font-size: 0.85rem;
 }
+
 .badge-review {
   background-color: #fef3c7;
   color: #92400e;
@@ -48,6 +49,7 @@ section[data-testid="stSidebar"] {
   border-radius: 6px;
   font-size: 0.85rem;
 }
+
 .badge-unique {
   background-color: #dcfce7;
   color: #166534;

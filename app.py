@@ -11,7 +11,7 @@ import os
 from engine import DomainContextEngine
 from validation import is_valid_input_text
 from matcher import load_system_core, search_similar_petitions
-from ui_components import render_petition_card
+from ui_components import render_petition_card, CUSTOM_CSS
 from reports import export_to_csv, export_to_pdf
 from mapping import build_petition_map
 
@@ -26,6 +26,9 @@ st.set_page_config(
 css_path = os.path.join(os.path.dirname(__file__), "assets", "style.css")
 with open(css_path, "r", encoding="utf-8") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# --- ІНЖЕКЦІЯ CUSTOM_CSS ІЗ ui_components.py ---
+st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
 # 2. Кешоване завантаження ML-ядра та даних
 @st.cache_resource

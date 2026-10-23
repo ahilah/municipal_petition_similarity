@@ -23,7 +23,7 @@ def load_theme_config():
 
 theme = load_theme_config()
 
-# Формуємо динамічні стилі з підтягуванням кольорів теми
+# Формуємо динамічні стилі з примусовим фіолетовим акцентом
 CUSTOM_CSS = f"""
 <style>
     /* Базові стилі карток результатів (акордеон) */
@@ -37,9 +37,11 @@ CUSTOM_CSS = f"""
         transition: all 0.2s ease-in-out;
     }}
     
+    /* Примусово робимо рамку фіолетовою при наведенні або відкритті */
+    details.petition-card[open],
     details.petition-card:hover {{
-        border-color: {theme.get("accent_color", "#2563EB")};
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+        border-color: #7C3AED !important;
+        box-shadow: 0 4px 6px -1px rgba(124, 58, 237, 0.12) !important;
     }}
     
     /* Інтерактивний заголовок */
@@ -63,7 +65,7 @@ CUSTOM_CSS = f"""
     }}
     
     .expand-hint {{
-        color: {theme.get("accent_color", "#2563EB")};
+        color: #7C3AED !important;
         font-size: 0.82rem;
         font-weight: 500;
         margin-top: 6px;
@@ -108,8 +110,7 @@ def render_petition_card(row) -> str:
   if has_text:
     body_html = f"<b>Повний зміст звернення:</b><br>{clean_desc}"
   else:
-    body_html = "<i>Повний текст петиції не було надано автором або він"
-    " відсутній у первинному вивантаженні.</i>"
+    body_html = "<i>Повний текст петиції не було надано автором або він відсутній у первинному вивантаженні.</i>"
 
   reasons_html = ""
   reasons_data = row.get("reasons", [])
