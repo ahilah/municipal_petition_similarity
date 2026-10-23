@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>Master's Thesis Project | Lviv Polytechnic National University</b><br>
-  Department of Automated Control Systems (Group KNUS-11)<br>
+  Department of Automated Control Systems <br>
   <b>Author:</b> Anastasiia Hileta
 </p>
 
@@ -69,6 +69,55 @@ masters-thesis/
 ├── ui_components.py        # HTML/CSS template cards for UI rendering
 ├── validation.py           # Input text validation logic
 └── requirements.txt        # Project dependencies
+```
 
 
-### Key Features
+## Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone [https://github.com/your-username/municipal_petition_similarity.git](https://github.com/your-username/municipal_petition_similarity.git)
+cd municipal_petition_similarity
+```
+
+---
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Download spaCy Ukrainian Language Model
+
+```bash
+python -m spacy download uk_core_news_lg
+```
+
+---
+
+## Running the Application
+
+To launch the interactive municipal monitoring web interface, run:
+
+```bash
+streamlit run app.py
+```
+
+Open your browser and navigate to 
+```text
+http://localhost:8501.
+```
+
+---
